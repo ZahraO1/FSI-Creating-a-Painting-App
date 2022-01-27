@@ -20,3 +20,11 @@ painting.addEventListener('click', function(e){
     e.target.style.backgroundColor = selectedColor
 })
 
+let clearButton = document.createElement('div')
+clearButton.textContent = "Clear"
+let palette = document.querySelector('.palette')
+palette.append(clearButton)
+
+clearButton.addEventListener('click', function(){
+    painting.style.backgroundColor = 'white'
+})
